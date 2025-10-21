@@ -16,7 +16,7 @@
       .form-content {
         border: 1px solid;
         padding: 4px 6px 4px 6px;
-        max-width: 500px;
+        max-width: 800px;
       }
       #btnSubmit {
         background: blue;
@@ -26,6 +26,10 @@
         background: red;
         color: white;
       }
+      .column {
+        display: flex;
+        gap: 10px;
+      }
     </style>
   </head>
   <body>
@@ -34,6 +38,33 @@
       <form action="#" method="post">
         <div class="column">
           <div class="column-1">
+            <table>
+              <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td>
+                  <input type="text" placeholder="Inputkan Nama..." required />
+                </td>
+              </tr>
+              <tr>
+                <td>Password Akun</td>
+                <td>:</td>
+                <td>
+                  <input
+                    type="password"
+                    placeholder="Inputkan Password..."
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>
+                  <input type="email" placeholder="Inputkan email..." required />
+                </td>
+              </tr>
+            </table>
             <div>
               <label>Nama Lengkap</label>
               <input type="text" placeholder="Inputkan Nama..." required />
