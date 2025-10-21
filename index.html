@@ -16,7 +16,7 @@
       .form-content {
         border: 1px solid;
         padding: 4px 6px 4px 6px;
-        max-width: 800px;
+        max-width: 900px;
       }
       #btnSubmit {
         background: blue;
@@ -61,75 +61,90 @@
                 <td>Email</td>
                 <td>:</td>
                 <td>
-                  <input type="email" placeholder="Inputkan email..." required />
+                  <input
+                    type="email"
+                    placeholder="Inputkan email..."
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>
+                  <input
+                    type="number"
+                    placeholder="Inputkan usia..."
+                    required
+                  />
                 </td>
               </tr>
             </table>
-            <div>
-              <label>Nama Lengkap</label>
-              <input type="text" placeholder="Inputkan Nama..." required />
-            </div>
-            <div>
-              <label>Password Akun</label>
-              <input
-                type="password"
-                placeholder="Inputkan Password..."
-                required
-              />
-            </div>
-            <div>
-              <label>Email</label>
-              <input type="email" placeholder="Inputkan email..." required />
-            </div>
-            <div>
-              <label>Usia</label>
-              <input type="number" placeholder="Inputkan usia..." required />
-            </div>
           </div>
           <div class="column-2">
-            <div>
-              <label>Jenis Kelamin</label>
-              <input type="radio" value="0" name="gender" required /> Perempuan
-              <input type="radio" value="1" name="gender" /> Laki-laki
-            </div>
-            <div>
-              <label>Tanggal Keberangkatan</label>
-              <input type="date" required />
-            </div>
-            <div>
-              <label>Fasilitas Tambahan</label>
-              <input
-                type="checkbox"
-                name="fasilitas[]"
-                value="wifi"
-                checked
-              />Wifi
-              <input
-                type="checkbox"
-                name="fasilitas[]"
-                value="selimut"
-              />selimut
-              <input type="checkbox" name="fasilitas[]" value="bantal" />bantal
-              <input
-                type="checkbox"
-                name="fasilitas[]"
-                value="makanan"
-              />makanan
-            </div>
-            <div>
-              <label>Tujuan Keberangkatan</label>
-              <select required>
-                <option value="">Pilih Tujuan Keberangkatan</option>
-                <option value="Bandung">Bandung</option>
-                <option value="Jakarta">Jakarta</option>
-                <option value="Surabaya">Surabaya</option>
-                <option value="Semarang">Semarang</option>
-              </select>
-            </div>
-            <div>
-              <label>Kode Pemesanan</label>
-              <input type="text" value="KAI-2025-01" disabled required />
-            </div>
+            <table>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                  <input type="radio" value="0" name="gender" required />
+                  Perempuan
+                  <input type="radio" value="1" name="gender" /> Laki-laki
+                </td>
+              </tr>
+              <tr>
+                <td>Tanggal Keberangkatan</td>
+                <td>:</td>
+                <td>
+                  <input type="date" required />
+                </td>
+              </tr>
+              <tr>
+                <td>Fasilitas Tambahan</td>
+                <td>:</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="fasilitas[]"
+                    value="wifi"
+                    checked
+                  />Wifi
+                  <input
+                    type="checkbox"
+                    name="fasilitas[]"
+                    value="selimut"
+                  />selimut
+                  <input
+                    type="checkbox"
+                    name="fasilitas[]"
+                    value="bantal"
+                  />bantal
+                  <input
+                    type="checkbox"
+                    name="fasilitas[]"
+                    value="makanan"
+                  />makanan
+                </td>
+              </tr>
+              <tr>
+                <td>Tujuan Keberangkatan</td>
+                <td>:</td>
+                <td>
+                  <select required>
+                    <option value="">Pilih Tujuan Keberangkatan</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Semarang">Semarang</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Kode Pemesanan</td>
+                <td>:</td>
+                <td><input type="text" value="KAI-2025-01" disabled required /></td>
+              </tr>
+            </table>
           </div>
         </div>
         <div>
